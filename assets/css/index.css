@@ -1,0 +1,116 @@
+/************************/
+/* navbar */
+#mainNav {
+position: absolute;
+border-bottom: 1px solid #eeeeee;
+background-color: rgba(255, 255, 255, 0.8);
+font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif; }
+#mainNav .navbar-brand {
+  font-weight: 800;
+  color: #444444; }
+#mainNav .navbar-toggler {
+  font-size: 12px;
+  font-weight: 800;
+  padding: 13px;
+  text-transform: uppercase;
+  color: #444444; }
+#mainNav .navbar-nav > li.nav-item > a {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase; }
+
+/************************/
+/* tooltip */
+.d3-tip {
+  line-height: 1;
+  padding: 6px;
+  background: rgba(230, 230, 230, 0.9);
+  color: #000;
+  border-radius: 4px;
+  font-size: 12px;
+  width: 200px;
+  margin-top: 3px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(230, 230, 230, 0.9);
+  content: "\25B2";
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips specifically */
+.d3-tip.s:after {
+  margin: 2px 0 0 0;
+  top: -10px;
+  left: 0;
+}
+
+/************************/
+/* slide menu */
+#slideR {
+  border-radius: 10px 0 0 10px;
+  z-index: 99;
+  cursor: pointer;
+  position: fixed;
+  top: 60px;
+  right: -220px;
+  height: 100%;
+  background: rgba(150, 150, 150, 0.8);
+  width: 250px;
+  color: #444;
+  font-size: 14px;
+  overflow-y:auto;
+  padding-bottom:40px;
+  box-shadow: -5px 0px 5px rgba(0,0,0,0.4);
+}
+#slideR #title {
+  width: 30px;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 5px;
+}
+.listTable>tbody>tr>td, .listTable>tbody>tr>th, .listTable>tfoot>tr>td, .listTable>tfoot>tr>th, .listTable>thead>tr>td, .listTable>thead>tr>th {
+  padding: 5px;
+}
+.table-striped>tbody>tr:nth-child(2n+1)>td, .table-striped>tbody>tr:nth-child(2n+1)>th {
+   background-color: rgba(200, 200, 200, 0.8);
+}
+
+/************************/
+body {
+  color: #333333;
+  /*font-family: 'Lora', 'Times New Roman', serif;*/
+  font-family: 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  background-image: url('../img/bg.png');
+  }
+  
+a {
+  color: #333333;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;  }
+  a:focus, a:hover {
+    color: #0085A1; }
+
+/* footer */
+.footer {
+  position: absolute;
+  bottom: 0px;
+  text-align: center;
+  width: 100%;
+}
+
+
+/* tooltip card */
+.card-block{
+  margin-top: 10px;
+  margin-bottom:5px;
+}
